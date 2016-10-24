@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hexo基本操作 | Makeup1122</title>
+  <title>hexo基本操作 | makeup1122</title>
 
   
-  <meta name="author" content="John Doe">
+  <meta name="author" content="Bing">
   
 
   
@@ -27,14 +27,14 @@
 
   <meta property="og:title" content="hexo基本操作"/>
 
-  <meta property="og:site_name" content="Makeup1122"/>
+  <meta property="og:site_name" content="makeup1122"/>
 
   
   <meta property="og:image" content="/favicon.ico"/>
   
 
   <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Makeup1122" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="makeup1122" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 </head>
 
@@ -46,7 +46,7 @@
     <header>
   <div class="site-branding">
     <h1 class="site-title">
-      <a href="/">Makeup1122</a>
+      <a href="/">makeup1122</a>
     </h1>
     <p class="site-description"></p>
   </div>
@@ -96,7 +96,11 @@
 <p>启动本地服务<br><code>hexo server -p 8090</code></p>
 <hr>
 <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol>
-<li>hexo在本地测试运行重启后页面一直空白，提示 ： WARN No layout: index.html<br>确定theme目录下，相应的目录是否存在或为空</li>
+<li><p>hexo在本地测试运行重启后页面一直空白，提示 ： <code>WARN No layout: index.html</code><br>确定theme目录下，相应的目录是否存在或为空</p>
+</li>
+<li><p>部署时出现 <code>error deployer not found:git</code>错误<br>可以能是未安装<code>hexo-deployer-git</code>模块<br>执行 ：<code>npm install hexo-deployer-git --save</code>即可。 </p>
+</li>
+<li>有的theme是不支持Tags的。。。。比如Hacker</li>
 </ol>
 
       
@@ -136,7 +140,7 @@
     Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
     </br>
     
-    &copy; 2016 John Doe
+    &copy; 2016 Bing
     
   </p>
 </footer>

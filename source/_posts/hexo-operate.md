@@ -43,3 +43,4 @@ type为post/draft/page等
 2. 部署时出现 `error deployer not found:git`错误 
  可以能是未安装`hexo-deployer-git`模块
  执行 ：`npm install hexo-deployer-git --save`即可。 
+3. 有的theme是不支持Tags的。。。。比如Hacker

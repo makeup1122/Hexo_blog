@@ -3,21 +3,52 @@
 <head>
   <meta charset="utf-8">
   
-  <title>makeup1122</title>
+  <title>tmux常用命令 | makeup1122</title>
 
   
   <meta name="author" content="Bing">
   
 
   
+  <meta name="description" content="Ctrl+b    激活控制台；此时以下按键生效
+系统操作
 
+
+
+
+
+
+
+
+?
+列出所有快捷键；按q返回
+
+
+d
+脱离当前会话；这样可以暂时返回Shell界面，输入tmux attach能够重新进入之前的会话
+
+
+D
+选择要脱离的会话；在同时开启了多个会话时使用
+
+
+Ctrl+z
+挂起当前会话
+
+
+">
+  
+
+  
+  
+  <meta name="keywords" content="linux,tmux">
   
 
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  
+  <meta property="og:title" content="tmux常用命令"/>
 
   <meta property="og:site_name" content="makeup1122"/>
 
@@ -54,12 +85,11 @@
 </header>
 
     <main class="site-main posts-loop">
-    
-  <article>
+    <article>
 
   
     
-    <h3 class="article-title"><a href="/2016/10/24/tmux/"><span>tmux常用命令</span></a></h3>
+    <h3 class="article-title"><span>tmux常用命令</span></h3>
     
   
 
@@ -268,81 +298,10 @@
   </div>
 </article>
 
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2016/10/24/hexo-operate/"><span>hexo基本操作</span></a></h3>
-    
   
 
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/10/24/hexo-operate/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-10-23T19:45:02.000Z">
-          2016-10-24
-        </time>
-      </a>
-    </span>
-  </div>
 
 
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><p>初始化<br><code>hexo init</code></p>
-<p>新建文章<br><code>hexo new [layout]&lt;title&gt;</code><br>如果layout为空，则使用配置文件_config.yml中的<code>default_layout</code>(默认为:post)。</p>
-<p>生成静态文件<br><code>hexo generate</code></p>
-<p>发表草稿<br><code>hexo publish [layout] &lt;filename&gt;</code></p>
-<p>部署<br><code>hexo deploy</code><br>如果配置好_config.yml中的deploy，即可自动发布的github.io</p>
-<p>获取文件列表<br><code>hexo list &lt;type&gt;</code><br>type为post/draft/page等</p>
-<p>清理工作目录<br><code>hexo clean</code></p>
-<p>启动本地服务<br><code>hexo server -p 8090</code></p>
-<hr>
-<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol>
-<li><p>hexo在本地测试运行重启后页面一直空白，提示 ： <code>WARN No layout: index.html</code><br>确定theme目录下，相应的目录是否存在或为空</p>
-</li>
-<li><p>部署时出现 <code>error deployer not found:git</code>错误<br>可以能是未安装<code>hexo-deployer-git</code>模块<br>执行 ：<code>npm install hexo-deployer-git --save</code>即可。 </p>
-</li>
-<li>有的theme是不支持Tags的。。。。比如Hacker</li>
-</ol>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/hexo/">hexo</a><a href="/tags/github/">github</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-
-<nav class="pagination">
-  
-  
-</nav>
     </main>
 
     <footer class="site-footer">
