@@ -1,5 +1,5 @@
 ---
-title: test
+title: git检出到工作到工作目录
 date: 2016-10-18 09:11:15
 tags:
 ---
