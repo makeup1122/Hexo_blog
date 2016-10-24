@@ -64,11 +64,11 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: Hacker
+theme: hacker
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git 
+  type: git
   repo: git@github.com:makeup1122/makeup1122.github.io.git
   branch: master
