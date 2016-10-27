@@ -37,10 +37,8 @@ type为post/draft/page等
 ***
 
 ### 问题
-1. hexo在本地测试运行重启后页面一直空白，提示 ： `WARN No layout: index.html`
-确定theme目录下，相应的目录是否存在或为空
+1. hexo在本地测试运行重启后页面一直空白，提示 ： `WARN No layout: index.html`,确定theme目录下，相应的目录是否存在或为空
 
-2. 部署时出现 `error deployer not found:git`错误 
- 可以能是未安装`hexo-deployer-git`模块
- 执行 ：`npm install hexo-deployer-git --save`即可。 
+2. 部署时出现 `error deployer not found:git`错误，可以能是未安装`hexo-deployer-git`模块 。执行 ：
+    `npm install hexo-deployer-git --save`即可。  
 3. 有的theme是不支持Tags的。。。。比如Hacker
