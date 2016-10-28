@@ -15,8 +15,16 @@ git的webhooks是个好东西呀，怎么没早点发现!github和git.oschina �
     `Content type` 发送请求的内容类型，有json格式和form data两种。
     `secret` 自定义密钥，被加载请求中一并发给`Payload URL`，保存在header的X-Hub-Signature中，可以用作验证请求。
 2. 可用事件:https://developer.github.com/webhooks/#events
+### 服务器配置
+添加完webhooks后，hook已经准备好了，但服务器端的配置才是最重要的。
+#### ngrok
+这个是github官网介绍的一个小工具，用来给内网用户设置一个外网访问地址的，用法也很简单，[下载](https://ngrok.com/download)ngrok程序，只有一个exe文件，直接双击就可以进入命令行，执行如下命令即可启动服务：
+    `ngrok http 80`
+启动后可以登录http://localhost:4040 就可以看到生成的外网URL链接，还可以看到请求和响应的内容。
+ngrok的1.0版本是免费的，如过注册了ngrok的用户，还可以生成安全口令、创建TCP连接，开启多通道等等功能。
+但是ngrok毕竟是国外的，服务很不稳定，原因你懂得。但是1.0版本是开源的，国内友人仿照版本，可自行查找。
 
-### node.js版服务端测试代码
+#### node.js版服务端测试代码
     var http = require('http');
     var child_process = require("child_process");
     http.createServer(function(req, res) {
@@ -30,5 +38,8 @@ git的webhooks是个好东西呀，怎么没早点发现!github和git.oschina �
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('get push post!');
     }).listen(8888);
-    
+ 
+#### 第三方工具
+npm上有很多github Webhooks的第三方的中间件，可以拿来直接用的。
+
 参考文档:https://developer.github.com/webhooks/
