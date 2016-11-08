@@ -3,6 +3,7 @@ title: ssh动态端口转发命令解析
 date: 2016-10-27 22:38:36
 tags:
 - ssh
+- synology
 ---
 #### 命令全貌：
         ssh -qfTnN -D 0.0.0.0:1080 SSH_SERVER -l user -o ServerAliveInterval=60

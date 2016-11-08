@@ -39,7 +39,7 @@ open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
-favicon: /favicon.png
+favicon: http://libing.win/favicon.ico
 
 #你的头像url
 avatar: https://avatars1.githubusercontent.com/u/3581586?v=3&s=466
