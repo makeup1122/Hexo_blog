@@ -38,6 +38,11 @@ tags:
 * `--cached` 从track列表删除。当已经被跟踪的文件被写到.gitignore里时，依旧每次会继续跟踪。用这个命令即可。
 .gitignore这个文件是用于 untracked 文件的忽略列表，用add将文件标记为 tracked 状态后 .gitignore就对其无效了
 
+### git blame
+* `-L <start>,<end>` 指定查看的起始行和结束行。
+
+### git instalweb 
+创建一下个gitweb。
 ### Bash中的git
 git源码中有几个比较有用Shell脚本的插件，但是这些插件并不是默认打开的。
 * `git-completion.bash` 该脚本可以通过<tab>键自动补全shell中的git命令。
