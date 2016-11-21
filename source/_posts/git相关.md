@@ -42,7 +42,16 @@ tags:
 * `-L <start>,<end>` 指定查看的起始行和结束行。
 
 ### git instalweb 
-创建一下个gitweb。
+创建一个gitweb。
+
+### git submodule 
+* 适用于git repo 嵌套或引用其他git repo库的情况
+* 用法:git submodule add 仓库地址 路径
+例如:`git submodule add https://github.com/litten/hexo-theme-yilia.git themes/yilia`
+* 更新: `git submodule update`
+* 删除: 先在根目录的`.gitmodules`文件中删除相应配置信息，然后执行`git rm –cached`。
+* 注意：路径不能以 / 结尾（会造成修改不生效）、不能是现有工程已有的目录（不能順利 Clone）
+
 ### Bash中的git
 git源码中有几个比较有用Shell脚本的插件，但是这些插件并不是默认打开的。
 * `git-completion.bash` 该脚本可以通过<tab>键自动补全shell中的git命令。
