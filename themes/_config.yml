@@ -38,7 +38,7 @@ animate: true
 open_in_new: false
 
 # Miscellaneous
-google_analytics: ''
+google_analytics: 'UA-86439875-1'
 favicon: http://libing.win/favicon.ico
 
 #你的头像url
