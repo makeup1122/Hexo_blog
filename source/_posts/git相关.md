@@ -5,7 +5,7 @@ tags:
 - git
 ---
 工作实践中遇到了许多很有用的参数，在这里记录一下。
-### 全局
+# 全局
 * `--git-dir` .git目录(默认为当前路径)  
     1. 一般我们都是`cd`到相应的代码库目录下进行操作，设置该参数即可从任何位置进行git操作。
     2. `--git-dir`传入的一定是git的路径，也就是用`git init --bare`创建的目录，或者`.git`目录。
@@ -17,34 +17,44 @@ tags:
 
 * `-q --quiet` 只输出错误信息。
 
-### git init 
+# git init 
 * `--bare` 创建一个空的git库。
     如`GIT_DIR `未设置，则在当前目录创建。该选项创建的git库只包含git文件而不包含实际项目的源文件，所以不允许进行一般的git操作，会收到` This operation must be run in a work tree`的错误，可见并非工作目录。
     所以一般远端仓库都是该命令初始化，可减少冲突。 
 
-### git clone
+# git clone
 * `--depth <depth>` 指定日志深度。
     因为经常使用[Could9 IDE](http://c9.io),又因为硬盘免费空间只有1GB,所以经常因为.git目录过大导致无法使用。 
 
-### git checkout
+# git checkout
 * `-f
 --force` 强制切换分支
+# git branch 
+* `-r` 查看本地所有分支
 
-### git reset
+# git push
+* `--all` 推送所有本地分支到远程库，比如`git push origin --all`
+* `--delete` 删除远程分支，比如删除远程的`test`分支：
+----------
+    $ git push origin --delete test
+    等同于
+    $ git push origin :test
+
+# git reset
 * `[<tree-ish>] <paths>` 切换所有`<paths>`文件或目录到`<tree-ish>`的状态。但并不会影响当前工作目录(working tree)或者当前分支。
 配合`git checkout`命令，可以实现还原单个文件历史状态的目的。
 
-### git rm
+# git rm
 * `--cached` 从track列表删除。当已经被跟踪的文件被写到.gitignore里时，依旧每次会继续跟踪。用这个命令即可。
 .gitignore这个文件是用于 untracked 文件的忽略列表，用add将文件标记为 tracked 状态后 .gitignore就对其无效了
 
-### git blame
+# git blame
 * `-L <start>,<end>` 指定查看的起始行和结束行。
 
-### git instalweb 
+# git instalweb 
 创建一个gitweb。
 
-### git submodule 
+# git submodule 
 * 适用于git repo 嵌套或引用其他git repo库的情况
 * 用法:git submodule add 仓库地址 路径
 例如:`git submodule add https://github.com/litten/hexo-theme-yilia.git themes/yilia`
@@ -54,7 +64,7 @@ tags:
 
 // ### git update-index --assume-unchanged  shuipf/Common/Conf/dataconfig.php
 
-### Bash中的git
+# Bash中的git
 git源码中有几个比较有用Shell脚本的插件，但是这些插件并不是默认打开的。
 * `git-completion.bash` 该脚本可以通过<tab>键自动补全shell中的git命令。
 * `git-prompt.sh` 该脚本可以自定义用户的Shell提示符（prompt)，显示当前目录下的Git仓库信息。
