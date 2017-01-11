@@ -25,6 +25,7 @@ ngrok的1.0版本是免费的，如过注册了ngrok的用户，还可以生成�
 但是ngrok毕竟是国外的，服务很不稳定，原因你懂得。但是1.0版本是开源的，国内友人仿照版本，可自行查找。
 
 #### node.js版服务端测试代码
+{% codeblock lang:nodejs %}
     var http = require('http');
     var child_process = require("child_process");
     http.createServer(function(req, res) {
@@ -38,7 +39,7 @@ ngrok的1.0版本是免费的，如过注册了ngrok的用户，还可以生成�
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('get push post!');
     }).listen(8888);
- 
+ {% endcodeblock %}
 #### 第三方工具
 npm上有很多github Webhooks的第三方的中间件，可以拿来直接用的。
 

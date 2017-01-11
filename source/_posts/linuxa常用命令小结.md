@@ -5,7 +5,7 @@ tags:
 - linux
 ---
 ### 日常工作中常用命令和工具的记录
-
+{% raw %}
 <table>
 <thead><tr><th>命令</th><th>简介</th><th>备注</th></tr></thead>
 <tbody>
@@ -18,3 +18,5 @@ tags:
 </tr>
 </tbody>
 </table>
+{% endraw %}
+
