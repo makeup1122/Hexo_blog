@@ -3,6 +3,7 @@ title: git-webhooks
 date: 2016-10-28 17:03:40
 tags:
 - git
+- hooks
 ---
 ### 前言
 git的webhooks是个好东西呀，怎么没早点发现!github和git.oschina 也早已都支持了，看来是我out了。

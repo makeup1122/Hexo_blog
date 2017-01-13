@@ -3,6 +3,7 @@ title: svn中使用hook script
 date: 2016-12-20 16:08:11
 tags:
 - svn
+- hooks
 ---
 ### svn与git
 最近又回归到使用svn做版本控制，其实svn在权限控制和安全控制方面还是比git有优势的，而且git的学习成本有点高，很难快速上手。相比来说svn有良好的GUI，适合团队管理，而git更适合做纯代码管理。
@@ -11,7 +12,7 @@ tags:
 以前使用git时，git有各种hook脚本，在实际生产中非常有用，比如自动推送线上代码的webhooks，再比如每次git pull后自动执行数据库迁移程序来同步数据库更新内容。
 最近发现svn也有hook script的功能，可以与git的hook功能完成相同的任务。
 
-### 设置
+### 设置本地Hook
 添加hook脚本：
 空白位置鼠标右键->TortoiseSVN->setting->Hook Script->add
 ![setting](http://ww3.sinaimg.cn/large/77e84037jw1faxcv0p9qqj20li0huwic.jpg)
