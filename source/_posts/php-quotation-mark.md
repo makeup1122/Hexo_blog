@@ -12,4 +12,4 @@ tags:
 
 1. [回车符和换行符的区别](http://www.cnblogs.com/yunf/archive/2011/04/20/2021830.html)
 2. [常用转义字符](http://baike.baidu.com/link?url=gOWNyWAZ5bkGwrbA1koAZ6Z0cDNjXvn7HyDOykHR8y-QMzS0j3RriKRfvtCTfFTDi4ZJ_z8jVKDcL_5c05Sl_XnHt82LB7Yul4Zz9pLKHr7GUm8xRuTcRvx7Rph3KcGh)
-![](http://d.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=f8180c7aae64034f0f98ca029af35507/18d8bc3eb13533fa31685189add3fd1f40345bbf.jpg)
+<!--![](http://d.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=f8180c7aae64034f0f98ca029af35507/18d8bc3eb13533fa31685189add3fd1f40345bbf.jpg)-->
