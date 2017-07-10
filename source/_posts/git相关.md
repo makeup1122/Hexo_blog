@@ -32,6 +32,11 @@ tags:
 # git branch 
 * `-r` 查看本地所有分支
 
+# git log
+* `--author` 按作者搜索
+* `--pretty` 优化输出格式 (`--oneline`)
+* `--date`   指定日期的输出格式
+
 # git push
 * `--all` 推送所有本地分支到远程库，比如`git push origin --all`
 * `--delete` 删除远程分支，比如删除远程的`test`分支：
