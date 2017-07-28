@@ -38,3 +38,6 @@ cd ${WORK_TREE} && php think migrate:run
     #> git push serverAlias develop
 ```
 ## 其他
+* 学历ssh config的配置方式和详细配置
+* git参数`--bare`、`--work-tree`的理解
+* git hooks脚本的类型和使用情景
