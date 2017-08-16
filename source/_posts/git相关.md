@@ -69,7 +69,11 @@ tags:
 * 注意：路径不能以 / 结尾（会造成修改不生效）、不能是现有工程已有的目录（不能順利 Clone）
 
 ### git update-index 
-* `--assume-unchanged`  
+* `--assume-unchanged`  把文件标记为 "没有变更"，把已经加入到版本库，但需要设置一些本地内容的文件设置为忽略，适用于数据库配置文件等。
+* `--no-assume-unchanged` 与上面的命令正好相反
+
+### git ls-files 
+* `-v` 查看 '假设未改变的' 文件(使用了`git update-index --assume-unchanged`命令)
 
 ### git config --global pack.windowMemory 256m 
 * remote out of memery的解决办法
