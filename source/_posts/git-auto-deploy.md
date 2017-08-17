@@ -17,7 +17,7 @@ tags:
 
 或者使用--mirror参数，生成镜像代码仓库
 ```
-    #>git clone --mirrot git@xxxx.com:test.git
+    #>git clone --mirror git@xxxx.com:test.git
 ```
 镜像代码仓库也是裸代码仓库，它与裸代码仓库的区别在于：它不仅将源代码仓库的本地分支映射到目标代码仓库的本地分支，而且将所有引用（包括远程跟踪分支、备注等）都进行映射并建立refspec配置以使目标代码仓库的所有引用可被git remote update命令覆盖。
 
