@@ -14,6 +14,7 @@ tags:
     #>git clone --bare git@xxxx.com:test.git
 ```
 该命令从远程库拷贝一份裸库到本地。
+
 或者使用--mirror参数，生成镜像代码仓库
 ```
     #>git clone --mirrot git@xxxx.com:test.git
@@ -51,6 +52,23 @@ echo -e "\033[33m--------------Start Migrate ------------\033[0m"
 ./vendor/davedevelopment/phpmig/bin/phpmig migrate
 echo -e "\033[36m--------------End Success---------------\033[0m"
 ```
+#### 忽略线上或生产环境的配置文件
+1. 首先正确修改你的项目中的配置文件。
+2. 使用如下命令来告诉git暂时忽略该配置文件的修改：
+```
+    #> git update-index --assume-unchanged config.file
+```
+如果想反悔则：
+```
+    #> git update-index --no-assume-unchanged config.file
+```
+这样该文件就不会出现在`git status`中
+3. 如果修改的配置文件较多，可以用`git ls-files`命令查询那些被`--assums-unchanged`忽略的文件
+```
+    #> git ls-files -v |grep '^h\+'
+```
+详情参考[git-ls-files文档](https://git-scm.com/docs/git-ls-files/)
+
 ## 客户端配置
 #### 配置远程git库信息
 ```
