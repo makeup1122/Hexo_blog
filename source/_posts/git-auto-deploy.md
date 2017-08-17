@@ -28,6 +28,23 @@ echo ${WORK_TREE}
 git --work-tree=${WORK_TREE} checkout  develop --force 
 cd ${WORK_TREE} && php think migrate:run
 ```
+另一个例子
+```
+#!/bin/sh
+//给ECHO输出添加颜色
+echo -e "\033[36m--------------Start Deploy--------------\033[0m"
+WWW_DIR="/home/nginx/www-culture-mirror"
+//目录不存在或无权限则退出脚本
+cd $WWW_DIR ||exit
+pwd
+echo $GIT_DIR
+//取消GIT_DIR变量，否则会出现错误：“fatal: not a git repository: '.'”
+unset GIT_DIR
+git pull origin develop
+echo -e "\033[33m--------------Start Migrate ------------\033[0m"
+./vendor/davedevelopment/phpmig/bin/phpmig migrate
+echo -e "\033[36m--------------End Success---------------\033[0m"
+```
 ## 客户端配置
 #### 配置远程git库信息
 ```
