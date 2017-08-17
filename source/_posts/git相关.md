@@ -78,6 +78,9 @@ tags:
 ### git config --global pack.windowMemory 256m 
 * remote out of memery的解决办法
 
+### git update-server-info-info
+* 以http或者https协议访问的git repo服务器才需要，其他（git、ssh等）不需要。
+
 # Bash中的git
 git源码中有几个比较有用Shell脚本的插件，但是这些插件并不是默认打开的。
 * `git-completion.bash` 该脚本可以通过<tab>键自动补全shell中的git命令。
