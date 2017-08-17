@@ -7,15 +7,15 @@ tags:
 
 ## 服务端配置
 #### ssh免密码登录
-配置ssh-key或pem文件等，用以本地用户可以免密码登录到服务器。
+配置ssh-key或pem文件等，用以本地用户可以免密码登录到服务器。
 #### 创建裸库
 在服务器某目录(例：`/opt/git`)下执行：
 ```
     #>git clone --bare git@xxxx.com:test.git
 ```
 该命令从远程库拷贝一份裸库到本地。
-#### 编写服务端hooks
-进入到版本库的hooks目录下，创建`post-receive`文件，添加执行权限：
+#### 编写服务端hooks
+进入到版本库的hooks目录下，创建`post-receive`文件，添加执行权限：
 ```
     #>cd test.git && touch post-receive
     #>chmod +x post-receive
@@ -50,11 +50,11 @@ echo -e "\033[36m--------------End Success---------------\033[0m"
 ```
     #> git remote add serverAlias sshUser@50.40.30.20:/opt/git/test.git
 ```
-#### 推送至远程服务器
+#### 推送至远程服务器
 ```
     #> git push serverAlias develop
 ```
 ## 其他
 * 学历ssh config的配置方式和详细配置
 * git参数`--bare`、`--work-tree`的理解
-* git hooks脚本的类型和使用情景
+* git hooks脚本的类型和使用情景
