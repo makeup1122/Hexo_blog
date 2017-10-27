@@ -74,6 +74,9 @@ tags:
 * `--assume-unchanged`  把文件标记为 "没有变更"，把已经加入到版本库，但需要设置一些本地内容的文件设置为忽略，适用于数据库配置文件等。
 * `--no-assume-unchanged` 与上面的命令正好相反
 
+# git remote update
+用于mirror库与原始库进行同步。
+
 # git ls-files 
 * `-v` 查看 '假设未改变的' 文件(使用了`git update-index --assume-unchanged`命令)
 
