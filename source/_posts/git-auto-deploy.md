@@ -3,6 +3,8 @@ title: git自动部署实践
 date: 2017-07-28 23:11:59
 tags:
 - git
+- deploy
+- hooks
 ---
 
 ## 服务端配置
