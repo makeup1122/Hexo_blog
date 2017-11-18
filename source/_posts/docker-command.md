@@ -83,10 +83,17 @@ tags:
         <td></td>
     </tr>
     <tr>
+        <td>docker commit</td>
+        <td>提交对容器的修改</td>
+        <td></td>
+    </tr>
+    <tr>
         <td rowspan=3>仓库</td>
         <td>docker search</td>
         <td>搜索仓库镜像</td>
-        <td></td>
+        <td><b>-f</b> stars=100 :搜索100颗星以上的镜像<br>
+            --filter=stars=100
+        </td>
     </tr>
     <tr>
         <td>docker pull/push</td>
