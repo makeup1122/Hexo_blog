@@ -26,7 +26,7 @@ tags:
 #### 编写服务端hooks
 进入到版本库的hooks目录下，创建`post-receive`文件，添加执行权限：
 ```
-    #>cd test.git && touch post-receive
+    #>cd test.git/hooks && touch post-receive
     #>chmod +x post-receive
 ```
 接下来就是编辑你自己的`post-receive`文件内容了，也就是自动化部署的过程脚本，我的一个tp5的例子：
