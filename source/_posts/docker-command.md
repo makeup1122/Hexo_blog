@@ -57,12 +57,17 @@ tags:
     <tr>
         <td>docker create</td>
         <td>创建容器</td>
-        <td></td>
+        <td>
+            <b>--name</b>:指定容器的名称<br>
+            <b>-p</b>:指定容器对外端口
+        </td>
     </tr>
     <tr>
         <td>docker start/stop/restart</td>
         <td>管理容器状态</td>
-        <td></td>
+        <td>
+            <b>-d,--detacg=true|false</b>:是否后台运行容器，默认为否
+        </td>
     </tr>
     <tr>
         <td>docker run</td>
