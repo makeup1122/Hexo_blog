@@ -10,6 +10,10 @@ tags:
 * ～/.ssh/config 用户配置文件。
 * /etc/ssh/ssh_config 系统配置文件。
 
+ssh读取配置文件的优先级为：
+1. 命令行参数。
+2. 用户配置文件(~/.ssh/config)。
+3. 系统配置文件(/etc/ssh/ssh_config)。
 ### 一般格式
 ```
 Host *
@@ -28,6 +32,7 @@ Host text.com
 ### 参数
 
 ##### 普通参数
+* Host ：描述参数的作用范围。
 * HostName ：ip或域名。当Host参数已经指明时可以不用指定该参数。
 * User ：用户名。
 * Port ：ssh端口号，默认22。
