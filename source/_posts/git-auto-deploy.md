@@ -81,6 +81,6 @@ echo -e "\033[36m--------------End Success---------------\033[0m"
     #> git push serverAlias develop
 ```
 ## 其他
-* 学历ssh config的配置方式和详细配置
+* 学习ssh config的配置方式和详细配置
 * git参数`--bare`、`--work-tree`的理解
 * git hooks脚本的类型和使用情景
