@@ -77,6 +77,12 @@ tags:
 # git remote update
 用于mirror库与原始库进行同步。
 
+# git reflog
+可以查看所有分支的所有操作记录(包括(包括commit和reset的操作)
+
+# git revert commitid
+撤销指定CommitId的
+
 # git ls-files 
 * `-v` 查看 '假设未改变的' 文件(使用了`git update-index --assume-unchanged`命令)
 
