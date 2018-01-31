@@ -6,9 +6,10 @@ tags:
 - centos
 ---
 
-## 
-1. 添加ELRepo第三方仓库[ELRepo](http://elrepo.org)（ELRepo是什么？）。
-2. 安装ELRepo仓库的命令
+### 添加ELRepo第三方仓库[ELRepo](http://elrepo.org)（ELRepo是什么？）。
+
+### 安装ELRepo仓库的命令
+
 ```
 [root@goingmerry ~]# rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 [root@goingmerry ~]# rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm (external link)
@@ -22,7 +23,8 @@ Updating / installing...
 
 ```
 
-3. 查看ELRepo仓库中可用内核版本信息
+### 查看ELRepo仓库中可用内核版本信息
+
 ```
 [root@goingmerry ~]#  yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
 Loaded plugins: fastestmirror
@@ -52,12 +54,13 @@ python-perf.x86_64                                                              
 ```
 其中的`kernel-ml.x86_64`行即为主线稳定版本的内核信息。
 
-4. 安装最新主线稳定内核
+### 安装最新主线稳定内核
+
 ```
 #>  yum --enablerepo=elrepo-kernel install kernel-ml
 ```
 
-5. 生效最新安装
+### 生效最新安装
 
 内核升级完毕后，目前内核还是默认的版本，如果此时直接执行reboot命令，重启后使用的内核版本还是默认的3.10，不会使用新的内核版本。
 首先，查看默认内核启动顺序：

@@ -7,7 +7,7 @@ tags:
 ---
 
 ### 准备工作
-1. Vultr的东京机房VPS，系统是CentOS7 64bit版本。
+1. 我的服务器是Vultr的东京机房VPS，系统是CentOS7 64bit版本。
 2. 检查Linux内核版本。Google BBR要求linux内核最低版本为4.9,如果版本低于4.9请先升级内核版本。
 
 ### 安装Google BBR
@@ -43,6 +43,6 @@ bbr
 tcp_bbr                20480  5
 ```
 
-### PS
+##### PS
 1. [Github:google/bbr](https://github.com/google/bbr)
 2. [参考文章](http://vultr.aicnm.com/CentOS%E5%AE%89%E8%A3%85Google-BBR%E5%8A%A0%E9%80%9F%E5%B7%A5%E5%85%B7%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/)
