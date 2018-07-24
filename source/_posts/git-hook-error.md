@@ -2,6 +2,8 @@
 title: windows下的Git Hooks执行错误
 date: 2018-07-24 10:05:28
 tags:
+- git
+- hooks
 ---
 
 # 问题
