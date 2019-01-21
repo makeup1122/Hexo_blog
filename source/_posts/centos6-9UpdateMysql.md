@@ -41,8 +41,7 @@ Upgrade process encountered error and will not continue.
 ### 错误原因
 Mysql版本升级，却未执行mysql_upgrade所致。
 ### 解决方法
-1. 登陆服务器，编辑/etc/my.cnf文件，找到`[mysqld]`模块。
-2. 添加`skip-grant-tables`:
+1. 登陆服务器，编辑/etc/my.cnf文件，找到`[mysqld]`模块，如下添加`skip-grant-tables`并保存退出
 ```
 ...
 [mysqld]
@@ -59,7 +58,7 @@ socket=/var/lib/mysql/mysql.sock
 ```
 # mysql_upgrade
 ```
-5. 执行完毕后，去掉(注释)步骤2在/etc/my.cnf中添加的`skip-grant-tables`选项
+5. 执行完毕后，去掉(或注释)步骤1在/etc/my.cnf中添加的`skip-grant-tables`选项
 6. 重启mysqld服务：
 ```
 # service mysqld restart
