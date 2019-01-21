@@ -1,5 +1,5 @@
 ---
-title: PHP项目自动部署简单脚步
+title: PHP项目自动部署脚本问题
 date: 2019-01-21 23:46:49
 tags:
   - php
