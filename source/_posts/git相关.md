@@ -39,6 +39,12 @@ tags:
 * `--since`   指定查询的起始时间(例如：`--since="Thu Aug 18"`)
 * `--before`  指定查询的结束时间(例如：`--before="Thu Aug 18"`)
 
+## 实例1
+```
+# 统计某作者的总提交天数
+git log --author=makeup1122 --pretty=format:"%ad" --date=format:'%Y-%m-%d' |awk '{a[$1]++}END{for(i in a)print i","a[i]}'
+```
+
 # git push
 * `--all` 推送所有本地分支到远程库，比如`git push origin --all`
 * `--delete` 删除远程分支，比如删除远程的`test`分支：
