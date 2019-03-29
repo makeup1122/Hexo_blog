@@ -43,6 +43,7 @@ tags:
 ```
 # 统计某作者的总提交天数
 git log --author=makeup1122 --pretty=format:"%ad" --date=format:'%Y-%m-%d' |awk '{a[$1]++}END{for(i in a)print i","a[i]}'
+git log --author=makeup1122 --pretty=format:"%ad" --date=short |awk '{a[$1]++}END{for(i in a)print i","a[i] |"sort"}'
 ```
 
 # git push
