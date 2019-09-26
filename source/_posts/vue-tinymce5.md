@@ -10,14 +10,17 @@ tags:
 ```
 $ npm install @tinymce/tinymce-vue
 ```
+
 2. 加载组件
 ```
 import Editor from '@tinymce/tinymce-vue';
 ```
+
 3. 使用组件
 ```
 <editor api-key="API_KEY" :init="{plugins: 'wordcount'}"></editor>
 ```
+
 4. 其他配置参见[官方文档](https://www.tiny.cloud/docs/integrations/vue/#configuringtheeditor)
 
 # 加载用户自定义插件

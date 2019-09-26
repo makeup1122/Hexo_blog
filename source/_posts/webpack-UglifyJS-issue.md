@@ -18,7 +18,7 @@ Unexpected token: keyword (const) [src/components/Alerts.vue:36,0][admin.b996c19
 2. 于是Google之，发现uglifyjs-webpack-plugin 2.0版本的Release日志中，明确提示重新切换回到[uglify-js](https://github.com/mishoo/UglifyJS2)，因为uglify-es被废弃了，如果需要ES6代码压缩，请使用[terser-webpack-plugin](https://github.com/webpack-contrib/terser-webpack-plugin)
 # 解决
 1. 方法一：使用Babel将ES6转换为ES5。
-2. 方法一：安装并使用[terser-webpack-plugin]：(https://github.com/webpack-contrib/terser-webpack-plugin)
+2. 方法二：安装并使用[terser-webpack-plugin]：(https://github.com/webpack-contrib/terser-webpack-plugin)
 ```
 $ npm install terser-webpack-plugin --save-dev
 ```
