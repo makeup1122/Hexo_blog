@@ -10,19 +10,15 @@ tags:
 ```
 $ npm install @tinymce/tinymce-vue
 ```
-
 2. 加载组件
 ```
 import Editor from '@tinymce/tinymce-vue';
 ```
-
 3. 使用组件
 ```
 <editor api-key="API_KEY" :init="{plugins: 'wordcount'}"></editor>
 ```
-
 4. 其他配置参见[官方文档](https://www.tiny.cloud/docs/integrations/vue/#configuringtheeditor)
-
 # 加载用户自定义插件
 1. 我使用了由[tinymce.ax-z.cn](http://tinymce.ax-z.cn/)提供的[首行缩进](http://tinymce.ax-z.cn/more-plugins/indent2em.php)和[设置行高](http://tinymce.ax-z.cn/more-plugins/lineheight.php)两个插件
 2. 在Tinymce-vue组件中，使用init配置的[setup](https://www.tiny.cloud/docs/configure/integration-and-setup/#setup)参数来加载自定义插件文件，我的一个列子：
