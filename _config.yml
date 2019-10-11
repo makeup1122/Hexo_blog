@@ -91,3 +91,7 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+admin:
+  username: libing
+  password_hash: 123123
+  secret: mdaskjndnskajn123nm1ndekm#
