@@ -96,3 +96,4 @@ admin:
   username: libing
   password_hash: $2a$10$GSvfFQ5JfA1lWGmIa2AX7.dahKqW4om/orZ6pEUsU2TksoN9H2NES
   secret: mdaskjndnskajn123m1ndekm#
+  deployCommand: /root/git-source/Hexo_blog/deploy.sh
