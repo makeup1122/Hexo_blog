@@ -91,7 +91,8 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+# hexo-admin authentification
 admin:
   username: libing
-  password_hash: 123123
-  secret: mdaskjndnskajn123nm1ndekm#
+  password_hash: $2a$10$cz0QRYng3gbWvpeITlIHX.8i.X/JlMltvuTE95hElYLu3a9P.e2va
+  secret: mdaskjndnskajn123m1ndekm#
