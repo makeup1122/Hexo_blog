@@ -94,5 +94,5 @@ jsonContent:
 # hexo-admin authentification
 admin:
   username: libing
-  password_hash: $2a$10$cz0QRYng3gbWvpeITlIHX.8i.X/JlMltvuTE95hElYLu3a9P.e2va
+  password_hash: $2a$10$GSvfFQ5JfA1lWGmIa2AX7.dahKqW4om/orZ6pEUsU2TksoN9H2NES
   secret: mdaskjndnskajn123m1ndekm#
