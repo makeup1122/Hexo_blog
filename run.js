@@ -7,3 +7,4 @@ exec('npx hexo server -p 50003 -d & ',(error, stdout, stderr) => {
         console.log('stdout: ${stdout}');
         console.log('stderr: ${stderr}');
 })
+
