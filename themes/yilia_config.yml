@@ -2,6 +2,7 @@
 
 menu:
   主页: /
+  # 随笔: /tags/随笔/
   文章: /archives/
 
 # SubNav
@@ -9,8 +10,8 @@ subnav:
   github: "https://github.com/makeup1122"
   weibo: "http://weibo.com/u/2011709495"
   mail: "mailto:makeup1123@163.com"
-  # rss: "#"
-  # zhihu: "#"
+  rss: "#"
+  zhihu: "#"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -65,7 +66,7 @@ top: true
 
 # Miscellaneous
 baidu_analytics: ''
-google_analytics: 'UA-86439875-1'
+google_analytics: ''
 favicon: https://nas.goingmerry.cn/favicon.ico
 
 #你的头像url
@@ -92,11 +93,11 @@ changyan_conf: false
 disqus: false
 
 #5、Gitment
-# gitment_owner: makeup1122      #你的 GitHub ID
-# gitment_repo: makeup1122.github.io          #存储评论的 repo
-# gitment_oauth:
-#   client_id: e6c18c96cce888ad59cb           #client ID
-#   client_secret: 2e1ce3aaaaee8f718e1dd4cc290ec848bd755ed0       #client secret
+gitment_owner: makeup1122      #你的 GitHub ID
+gitment_repo: makeup1122.github.io          #存储评论的 repo
+gitment_oauth:
+  client_id: f228da570d61f44ee0c9           #client ID
+  client_secret: c503a543ed7846e4bf2690d2d540c7e1f5c5207c       #client secret
 
 #6、Valine https://valine.js.org
 # valine: 
@@ -121,9 +122,9 @@ slider:
 # 智能菜单
 # 如不需要，将该对应项置为false
 # 比如
+#smart_menu:
+#  friends: false
 smart_menu:
-  # friends: false
-# smart_menu:
   innerArchive: '所有文章'
   # friends: '友链'
   aboutme: '关于我'
