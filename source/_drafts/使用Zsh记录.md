@@ -10,7 +10,7 @@ $> chsh -s /bin/zsh
 ```
 
 # 使用技巧
-1. 
+1. ~/.zshrc
 2. 
 
 # 使用[oh my zsh](https://ohmyz.sh/)
